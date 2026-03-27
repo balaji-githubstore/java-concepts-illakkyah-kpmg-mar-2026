@@ -1,5 +1,7 @@
 package com.kpmg.datatypes;
-
+/**
+ * Datatypes 
+ */
 public class Demo1Datatypes {
 
 	public static void main(String[] args) {
