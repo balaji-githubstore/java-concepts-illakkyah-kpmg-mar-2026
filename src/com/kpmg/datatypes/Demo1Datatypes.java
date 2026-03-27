@@ -1,6 +1,6 @@
 package com.kpmg.datatypes;
 /**
- * Datatypes 
+ * Datatypes explained
  */
 public class Demo1Datatypes {
 
