@@ -7,7 +7,9 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import com.kpmg.employee.Employee;
-
+/**
+ * Working on predicate string
+ */
 public class UrlFilterExample {
 
     /**
