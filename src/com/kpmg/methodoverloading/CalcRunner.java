@@ -6,7 +6,7 @@ public class CalcRunner {
 		
 		Calculator cal=new Calculator();
 		
-		cal.add(1, 1);
+		cal.add(1, 1.23);
 		
 		System.out.println("balaji");
 		System.out.println(1.2);
