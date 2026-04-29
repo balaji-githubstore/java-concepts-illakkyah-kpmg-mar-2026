@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-29T22:38:38 IST" name="Default suite" finished-at="2026-04-29T22:38:41 IST" duration-ms="3150">
+    <groups>
+    </groups>
+    <test started-at="2026-04-29T22:38:38 IST" name="Default test" finished-at="2026-04-29T22:38:41 IST" duration-ms="3150">
+      <class name="com.kpmg.test.Demo1GetPathParameter">
+        <test-method signature="findValidPetById()[pri:0, instance:com.kpmg.test.Demo1GetPathParameter@223191a6]" started-at="2026-04-29T22:38:38 IST" name="findValidPetById" finished-at="2026-04-29T22:38:41 IST" duration-ms="3114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findValidPetById -->
+      </class> <!-- com.kpmg.test.Demo1GetPathParameter -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
