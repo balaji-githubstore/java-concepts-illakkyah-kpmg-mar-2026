@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.kpmg.test.Demo4Post">
+      <class name="com.kpmg.test.Demo6OpenAPISpecValidator">
         <methods>
-          <include name="updateValidPetTest"/>
+          <include name="findValidPetById"/>
         </methods>
-      </class> <!-- com.kpmg.test.Demo4Post -->
+      </class> <!-- com.kpmg.test.Demo6OpenAPISpecValidator -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

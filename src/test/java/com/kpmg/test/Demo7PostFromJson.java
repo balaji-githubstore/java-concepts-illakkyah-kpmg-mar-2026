@@ -1,26 +1,34 @@
 package com.kpmg.test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.kpmg.model.Pet;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class Demo3Post {
+public class Demo7PostFromJson {
 
 	public static String baseUrl = "https://petstore.swagger.io/v2";
 
 	@Test
-	public void addValidPetTest() {
+	public void addValidPetFromJSonTest() throws FileNotFoundException {
+		
+	FileInputStream file=new FileInputStream("src/test/resources/new_pet.json");
+		
+		JsonPath jsonPath=new JsonPath(file);
+		
+		String requestBody=jsonPath.prettify();
+		
+		System.out.println(requestBody);
+		
 		String resource = "/pet";
 
-		String requestBody = "{\r\n" + "    \"id\": 801,\r\n" + "    \"category\": {\r\n" + "        \"id\": 0,\r\n"
-				+ "        \"name\": \"string-801\"\r\n" + "    },\r\n" + "    \"name\": \"doggie\",\r\n"
-				+ "    \"photoUrls\": [\r\n" + "        \"string\"\r\n" + "    ],\r\n" + "    \"tags\": [\r\n"
-				+ "        {\r\n" + "            \"id\": 0,\r\n" + "            \"name\": \"string\"\r\n"
-				+ "        }\r\n" + "    ],\r\n" + "    \"status\": \"available\"\r\n" + "}";
 
 		Response response = RestAssured.given().header("Content-Type", "application/json").body(requestBody).when()
 				.post(baseUrl + resource).then().statusCode(200).log().all().extract().response();
